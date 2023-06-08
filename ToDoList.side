@@ -1,0 +1,144 @@
+{
+  "id": "7cfaa498-14c0-4bdd-940a-eb4163cd6664",
+  "version": "2.0",
+  "name": "ToDoList",
+  "url": "https://todolist.james.am",
+  "tests": [{
+    "id": "306b1597-a5d8-46ed-8344-3cd13c39bdea",
+    "name": "Edycja zadania",
+    "commands": [{
+      "id": "78fc5f8d-cb80-456e-ae69-73316b7c6bfa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14805ed4-68a8-4dff-a848-e86fce156b3a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfd34bb7-ed68-4764-a832-36414ce78eac",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test 1"
+    }, {
+      "id": "b5ca83e6-bae5-4b56-9be2-542788d297f9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "84be56c0-ee4f-474e-9adc-d2a40e10633d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-binding:nth-child(2)",
+      "targets": [
+        ["css=.ng-binding:nth-child(2)", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Test 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28b6409a-56ed-4bf7-af82-ce29f399165d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ng-binding:nth-child(2)",
+      "targets": [],
+      "value": "Test 1"
+    }, {
+      "id": "b443f111-f863-4935-9df8-c3d89f003db7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-binding:nth-child(2)",
+      "targets": [
+        ["css=.ng-binding:nth-child(2)", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Test 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55bd8394-0da9-4576-a606-f17e6241aadd",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.ng-binding:nth-child(2)",
+      "targets": [
+        ["css=.ng-binding:nth-child(2)", "css:finder"],
+        ["xpath=//div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Test 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfa640bc-2c43-401e-9fae-8cf5f6d03441",
+      "comment": "",
+      "command": "type",
+      "target": "css=.edit",
+      "targets": [
+        ["css=.edit", "css:finder"],
+        ["xpath=//li/form/input", "xpath:position"]
+      ],
+      "value": "Test 11"
+    }, {
+      "id": "dd3c2ada-307c-48c7-b620-ab7ba39d2293",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filters",
+      "targets": [
+        ["css=.filters", "css:finder"],
+        ["xpath=//footer/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51f0ea86-5f3f-410d-b145-3d7ba4e1d2c3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ng-binding:nth-child(2)",
+      "targets": [],
+      "value": "Test 11"
+    }, {
+      "id": "5f88db3c-d6fe-4daf-bb30-6812681e98fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main > label",
+      "targets": [
+        ["css=.main > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Mark all as complete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94082a4d-6a7d-4e46-aa45-6c7a36f449d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clear-completed",
+      "targets": [
+        ["css=.clear-completed", "css:finder"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "30feb4a8-0157-451e-bd25-8415226ecb7b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://todolist.james.am/"],
+  "plugins": []
+}
